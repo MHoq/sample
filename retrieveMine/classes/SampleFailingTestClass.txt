@@ -1,0 +1,28 @@
+@isTest 
+public class AddOpportunityControllerTest 
+{
+	static testMethod void testMethod1() 
+	{
+		Account testAccount = new Account();
+		testAccount.Name='Test Account' ;
+		insert testAccount;
+		
+		Contact cont = new Contact ();
+		cont.LastName ='Test';
+		cont.FirstName ='Test';
+		cont.accountid = testAccount.id;
+		insert cont;
+		
+		contract contr = new contract();
+		// add all required field
+		insert contr;
+		
+		Test.StartTest(); 
+
+			//ApexPages.currentPage().getParameters().put('id', String.valueOf(contr.Id));
+			GetAccountContacts  testAccPlan = new GetAccountContacts();
+
+
+		Test.StopTest();
+	}
+}
