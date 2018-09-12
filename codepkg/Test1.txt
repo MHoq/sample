@@ -1,2 +1,6 @@
 Test 1-AB
+<<<<<<< HEAD
 Bobby $70/Hr.
+=======
+Edit in Github
+>>>>>>> de05b22b36f66a58135e1ced5dbf8b7b53a9c8ee
